@@ -1,0 +1,144 @@
+/* Navigation */
+*{
+    margin:0px;
+    padding: 0px;
+}
+html{
+    margin:0px;
+    padding: 0px;
+}
+#navbar {
+    flex-direction: column;
+    height:fit-content;
+    /* justify-content: center; */
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20rem;
+    
+}
+#navbar::before{
+    height:5rem;
+    padding:1.4rem;
+    flex-wrap:wrap;
+    margin-bottom: 20rem;
+}
+#logo img{
+    height:3.5rem;
+}
+#navbar ul li{
+  margin-top: .1rem;
+}
+
+#navbar ul li a{
+    font-size: 1.5rem;
+}
+/* Home section */
+#home{
+    height:100%; 
+    padding: 3px 28px;
+    margin-bottom: 12rem;
+    padding-top: 5rem;
+    flex-wrap: wrap;
+
+}
+
+#home::before{
+    /* height:fit-content; */
+    flex-wrap: wrap;
+    /* width: 100vh; */
+}
+
+#home p{
+    font-size: 13px;
+}
+
+/* Services section  */
+#services{
+    flex-direction: column;
+}
+
+#services .box { 
+    padding: 14px;
+    margin: 2px 0px; 
+    margin-bottom: 20px;
+}
+
+/* Clients section */
+#clients{
+    flex-wrap: wrap;
+    height: auto;
+}
+.client-items img{
+    /* height:10px; */
+    padding: 0px;
+}
+#client-section::before{
+    display: flex;
+    flex-wrap: wrap;
+
+    height: 700px;
+    /* height: auto; */
+}
+
+#clients img{
+    /* width: 66px; */
+    /* padding: 6px; */
+    height: 4rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Contact us section */
+#contacts{
+    box-sizing: border-box;
+    font-size:1.3rem ;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+    height: 450px;
+    /* align-items: flex-start; */
+    /* justify-content: center; */
+    /* background-color: yellow; */
+    align-self:flex-start;
+}
+#contact-items {
+    font-size:1rem ;
+    width:1px;
+    padding: 0px;
+    margin: 0px;
+    /* align-items */
+}
+#contact-items input{
+    font-size:5px ;
+    width:1rem;
+    overflow:auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb(75, 51, 98);
+    align-items: flex-start;
+
+}
+/* Footer */
+.divfooter{
+    text-align: center;
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0px;
+    margin-top: 7rem; */
+}
+#hfooter{
+    padding: 0px;
+    margin: 0px;
+    font-size: 1rem;
+}
+
+/* Utility classes */
+.h-primary{
+    font-size:26px;
+}
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}

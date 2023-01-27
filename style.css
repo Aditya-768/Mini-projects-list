@@ -1,0 +1,325 @@
+/* css reset */
+*{
+    margin:0px;
+    padding:0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+/* css variables */
+:root{
+    --navbar-height:60px;
+
+}
+/* navigation bar */
+#navbar{
+    display:flex;
+    height: 4.2rem;
+    position:fixed;
+    z-index: 1;
+    width: 100%;
+    /* justify-content:flex-end; */
+    /* background-color: #ffffff; */
+    
+}
+/* navigation bar: logo and image */
+#logo{
+    z-index: 2;
+}
+#logo img{
+    height:4.1rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* navigation bar: list style */
+#navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    
+    
+
+}
+
+#navbar ul li{
+    
+    list-style: none;
+    font-size:1.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    
+    z-index: 2;
+}
+#navbar ul li a{
+    padding: 1.2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content:space-around;
+    font-weight:bold;
+    font-size:1.5rem;
+    display: flex;
+    
+    /* height: 10rem; */
+}
+#navbar ul li:hover{
+    background-color: rgb(8, 8, 78);
+    /* width:10%; */
+    
+    
+}
+#navbar::before{
+    content:"";
+    background-color: rgb(10, 10, 119);
+    position:absolute;
+    /* position:relative; */
+    height: 4.2rem;
+    width:100%;
+    z-index:1;
+    opacity:0.5;
+}
+
+
+/* home section */
+#home{
+    color:rgb(0, 0, 0);
+   
+    display:flex;
+    flex-direction: column;
+    /* padding:10px 50px; */
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    /* width: 100vh; */
+    padding:0rem 6rem;
+    
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background:url('./img/img5.jpg') no-repeat center center/cover;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity:0.8;
+
+}   
+
+
+#home h1 {
+    font-size: 3rem;
+    padding: 3rem 1rem;
+    text-align: center;
+    animation: h1animate linear 5s infinite;
+    /* box-shadow: 5px 10px 10px blue; */
+}
+#home p{
+    text-align:center;
+}
+.btn{
+    padding: 7px 10px;
+    border:3px solid black;
+    background-color:#000000;
+    margin-top: 3rem;
+    border-radius:8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor:pointer;
+    color:rgb(255, 255, 255);
+}
+.btn:hover{
+    transform: scale(1.2);
+    
+}
+
+
+#services-container{
+    box-sizing: border-box;
+    position: relative;
+    top: 4.2rem;
+    /* border: 5px solid blue */
+    /* justify-content: center; */
+    align-items: center;
+    /* display:flex; */
+    flex-direction: column;
+    width:100%;
+    height: 100%;
+    /* margin-top:17rem; */
+    box-sizing: border-box;
+    padding:  0rem 2rem 1rem 2rem;
+    margin-bottom: 5rem;
+}
+#services{
+    display:flex;
+   
+
+}
+#services .box{
+    border:7px solid rgb(0, 0, 0);
+    display:flex;
+    flex-direction: column;
+    width:auto;
+    background-color:linear-gradient red;
+    margin:30px 0px 0px 10px;
+    border-radius: 15px;
+    padding:1rem 2rem 3rem 1rem;
+}
+#services .box img{
+    height:190px;
+    display:block;
+    margin:auto;
+}
+.hcenter{
+    /* position: relative; */
+    display:flex;
+    /* margin:20px; */
+    /* height:20rem; */
+    font-size: 2.4rem;
+    justify-content: center;
+    align-items:flex-end;
+    margin-top: 1rem;
+
+}
+#services .hsecondary{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+#services .parafood{
+    text-align: center;
+    
+}
+
+
+/* Client section */
+#client-section{
+    /* box-sizing: border-box; */
+    /* display: block; */
+    /* border: 5px solid green; */
+    margin-bottom: 4rem;
+    height:auto;
+
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('./img/img1.jpeg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.5;
+    width:100%;
+    height:25rem;
+    margin-bottom: 2rem;
+}
+.client-items{
+    padding:80px;
+}
+.client-items img{
+    height:4rem;
+}
+#hclients{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 2.4rem;
+}
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+
+/* Contacts section */
+#contacts{
+    height: auto;
+}
+#contacts::before{
+    content:"";
+    position:absolute;
+    background: url('./img/con.webp') no-repeat center center/cover;
+    width:100%;
+    height:100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#contact-section{
+    /* border: 5px solid purple; */
+   
+}
+#contacts{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    font-size: 25px;
+    /* border: 5px solid black; */
+
+}
+#hcontact{
+    justify-content: center;
+    display: flex;
+    font-size: 40px;
+    margin-bottom: 80px;
+}
+.contact-items{
+    padding: 1rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.contact-items input{
+    justify-content: center;
+    display: flex;
+    font-weight: normal;
+    font-size: 1rem;
+    align-items: center;
+    text-align: center;
+    width:20rem;
+    border-radius:.3rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+
+.contact-items #btn{
+    background-color: #000000;
+    border-radius: 10px;
+    padding:8px 19px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+
+}
+
+.contact-items #btn:hover{
+    transform: scale(1.2);
+}
+
+.divfooter{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* margin-top: 8.2rem; */
+    padding:1rem 0rem;
+    background-color: black;
+    color: white;
+    position:relative;
+    bottom:-3.4rem;
+    text-align: center;
+    position: relative;
+    bottom:-8rem;
+}
+input{
+    padding:.5rem 0;
+    border:0;
+    font-size: 2px;
+    font-weight: lighter;
+}
