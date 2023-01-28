@@ -1,0 +1,36 @@
+@media screen and (max-width:1031px)
+{
+    .services{
+        flex-wrap: wrap;
+    }
+    .clients{
+        flex-wrap: wrap;
+        /* overflow: hidden; */
+        box-sizing: border-box;
+    }
+    .clients img{
+        width:5rem;
+        height:5rem;
+    }
+    .clients-section{
+        flex-wrap: wrap;
+        /* height: 70rem; */
+    }
+    /* nav li a{
+        font-size:.8rem ;
+        padding: .5rem .5rem;
+    } */
+}
+@media screen and (max-width:600px) {
+    .clients-section{
+        /* margin-bottom: 4rem; */
+        /* overflow: hidden; */
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width:800)
+{
+    .clients-section{
+        /* height:60rem; */
+    }
+}
